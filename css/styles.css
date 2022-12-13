@@ -209,7 +209,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     line-height: 1.2;
 }
 
-.progect-list .text {
+.progect-link .text {
+    color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.2;
 }
