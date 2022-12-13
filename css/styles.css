@@ -3,10 +3,11 @@
 --primary-text-color: rgba(67, 68, 85, 1);
 --title-text-color: rgba(46, 47, 66, 1);
 --accent-text-color: rgba(231, 233, 252, 1);
---brand-text-color: rgba(77, 90, 229, 1)
+--brand-text-color: rgba(77, 90, 229, 1);
+--accent-section-color: rgba(244, 244, 253, 1)
 }
 .body {
-    background:  #E5E5E5;
+    background: rgb(255, 255, 255);
     color: rgba(67, 68, 85, 1);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.02em;
@@ -64,8 +65,11 @@ color: var(--brand-text-color);
 /* MAIN */
 
 /* Hero Section */
+.section-hero {
+background-color: var(--title-text-color);
+}
 .hero-title {
-    color: var(--accent-text-color);
+    color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 56px;
     line-height: 1.07;
@@ -98,7 +102,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 
 /* Benefit Section */
 .title-benefit {
-    color:  #E5E5E5;
+display: none;
 }
 
 .benefit-list .title {
@@ -112,7 +116,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     font-size: 16px;
     line-height: 1.5;
 }
-/* Title Section  */
+/* WWD Section  */
 .title-wwd
 .title-team {
     color: var(--title-text-color);
@@ -122,7 +126,10 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 text-align: center;
 text-transform: capitalize;
 }
-
+/* Team Section */
+.section-team {
+    background-color: var(--accent-section-color);
+}
 .team-list .title {
     color: var(--title-text-color);
     font-weight: 600;
@@ -138,20 +145,39 @@ text-align: center;
 }
 
 /* Footer */
+.footer-section {
+    background-color: var(--title-text-color);
+}
+
 .footer-text {
     color: var(--accent-text-color);
     font-size: 16px;
 line-height: 1.5;
 }
 
+.footer-section .logo {
+color: var(--accent-section-color);
+font-family: 'Raleway', sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+letter-spacing: 0.03em;
+}
+
+.accent-logo {
+color: var(--brand-text-color)
+}
+
 /* PORTFOLIO */
 
 .portfolio-title,
 .filters-title {
-    color:  #E5E5E5;;
+    display: none;
 }
 
-/* розписати кнопки */
+.filters-title {
+    display: none;
+}
 
 .filters-list .button {
     color: var(--brand-text-color);
@@ -163,12 +189,14 @@ line-height: 1.5;
     background-color:var(--accent-text-color);
     cursor: pointer; 
     border-radius: 4px;
+    border-color: var(--accent-text-color);
 }
 
 .filters-list .button:hover,
 .filters-list .button:focus {
   color: var(--accent-text-color);
     background-color: var(--brand-text-color);
+    border-color: var(--brand-text-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
 0px 2px 1px rgba(0, 0, 0, 0.08), 
 0px 2px 2px rgba(0, 0, 0, 0.12);
